@@ -1,6 +1,6 @@
 # loginflutterapp
 
-A new Flutter application.
+A new Flutter application. This app only make login to firebase.
 
 ## Getting Started
 
