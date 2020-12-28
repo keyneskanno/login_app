@@ -66,8 +66,14 @@ class Home extends StatelessWidget {
                         fontWeight: FontWeight.bold
                     ),
                   ),
-                  SizedBox(height: 16.0,),
-                  Text("Olá, ${!model.isLoggedIn() ? "" : model.userData["name"]}"),
+                  SizedBox(height: 25.0,),
+                  Text("Olá, ${!model.isLoggedIn() ? "" : model.userData["name"]}",
+                    style: TextStyle(
+                      color: Colors.redAccent,
+                      fontSize: 25.0,
+                    ),
+
+                  ),
                   GestureDetector(
                     child:
 
@@ -75,7 +81,7 @@ class Home extends StatelessWidget {
                       !model.isLoggedIn()? "Entre ou cadastre-se >" : "Sair",
                       style: TextStyle(
                         color: Theme.of(context).primaryColor,
-                        fontSize: 16.0,
+                        fontSize: 25.0,
                         fontWeight: FontWeight.bold
                       ),
                     ),
